@@ -1,3 +1,4 @@
+
 # CIFAR-10 Classification Project
 
 This project contains a deep learning model for image classification using the CIFAR-10 dataset. It utilizes TensorFlow and Keras libraries to build and train a convolutional neural network (CNN) for classifying images into 10 different categories.
@@ -45,3 +46,49 @@ The notebook begins by downloading and splitting the CIFAR-10 dataset into train
 from keras.datasets import cifar10
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
+```
+
+### Model Training
+
+The model is defined using Keras, and it includes several convolutional layers, max-pooling layers, dropout, and batch normalization:
+
+```python
+from keras.models import Sequential
+from keras.layers import Conv2D, MaxPool2D, Dense, Dropout, Flatten, BatchNormalization
+
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
+    MaxPool2D((2, 2)),
+    BatchNormalization(),
+    Dropout(0.2),
+    Flatten(),
+    Dense(512, activation='relu'),
+    Dropout(0.5),
+    Dense(10, activation='softmax')
+])
+```
+
+## Model Architecture
+
+The architecture of the CNN model is as follows:
+- Convolutional Layer with 32 filters and a 3x3 kernel
+- Max-Pooling Layer with 2x2 pool size
+- Batch Normalization Layer
+- Dropout Layer with a rate of 0.2
+- Flatten Layer
+- Dense Layer with 512 units and ReLU activation
+- Dropout Layer with a rate of 0.5
+- Output Layer with 10 units and softmax activation
+
+## Results
+
+After training the model, the accuracy achieved on the test set is approximately 73%. The confusion matrix and other evaluation metrics are included in the notebook.
+
+```python
+from sklearn.metrics import confusion_matrix
+
+y_pred = model.predict(x_test)
+conf_matrix = confusion_matrix(y_test, y_pred.argmax(axis=1))
+sns.heatmap(conf_matrix, annot=True, fmt='d')
+plt.show()
+```
