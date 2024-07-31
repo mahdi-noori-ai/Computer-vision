@@ -1,4 +1,4 @@
-
+```markdown
 # CIFAR-10 Classification using Deep Learning
 
 Welcome to the CIFAR-10 classification project! This repository contains a deep learning model for image classification using the CIFAR-10 dataset. The project utilizes TensorFlow and Keras libraries to build and train a convolutional neural network (CNN) for classifying images into 10 different categories.
@@ -93,6 +93,4 @@ plt.show()
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
-
-## License
 ```
