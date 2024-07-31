@@ -1,39 +1,42 @@
-```markdown
-# CIFAR-10 Classification using Deep Learning
 
-Welcome to the CIFAR-10 classification project! This repository contains a deep learning model for image classification using the CIFAR-10 dataset. The project utilizes TensorFlow and Keras libraries to build and train a convolutional neural network (CNN) for classifying images into 10 different categories.
+# CIFAR-10 Classification Project
 
-## Table of Contents
+This project contains a deep learning model for image classification using the CIFAR-10 dataset. It utilizes TensorFlow and Keras libraries to build and train a convolutional neural network (CNN) for classifying images into 10 different categories.
 
-- [Overview](#overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Overview
+## Project Overview
 
 The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. There are 50,000 training images and 10,000 test images. This project aims to build a CNN model to achieve high accuracy in image classification tasks.
 
+## Files and Directories
+
+- `Deep Learning classification - CIFAR10-0.73%.ipynb`: The main Jupyter notebook containing the code for data loading, preprocessing, model building, training, and evaluation.
+- `requirements.txt`: A file listing the dependencies required to run the project.
+
 ## Installation
 
-To get started with the project, clone the repository and install the required dependencies:
+To set up the project, follow these steps:
 
-```bash
-git clone https://github.com/yourusername/cifar10-classification.git
-cd cifar10-classification
-pip install -r requirements.txt
-```
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/cifar10-classification.git
+    cd cifar10-classification
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
 
-To run the project, simply execute the Jupyter notebook provided in the repository. The notebook includes steps for data preprocessing, model building, training, and evaluation.
+To run the project, open the Jupyter notebook and execute the cells. The notebook includes detailed steps for the entire workflow:
 
-```bash
-jupyter notebook Deep\ Learning\ classification\ -\ CIFAR10-0.73%.ipynb
-```
+1. Data Loading and Preprocessing
+2. Model Architecture Definition
+3. Model Training
+4. Model Evaluation
 
 ### Data Loading and Preprocessing
 
@@ -89,7 +92,3 @@ conf_matrix = confusion_matrix(y_test, y_pred.argmax(axis=1))
 sns.heatmap(conf_matrix, annot=True, fmt='d')
 plt.show()
 ```
-
-## Contributing
-
-Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
