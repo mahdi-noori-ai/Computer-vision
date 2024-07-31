@@ -92,3 +92,7 @@ conf_matrix = confusion_matrix(y_test, y_pred.argmax(axis=1))
 sns.heatmap(conf_matrix, annot=True, fmt='d')
 plt.show()
 ```
+
+## License
+
+This project includes the MIT License at the end, providing a clear and comprehensive overview of the project while ensuring it is appropriately licensed.
