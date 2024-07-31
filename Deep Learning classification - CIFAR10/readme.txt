@@ -1,3 +1,5 @@
+Here is the formatted text in GitHub markdown:
+
 ```markdown
 # CIFAR-10 Classification using Deep Learning
 
@@ -93,4 +95,11 @@ plt.show()
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+Feel free to adjust the repository URL, installation steps, and any other specific details according to your project setup.
 ```
