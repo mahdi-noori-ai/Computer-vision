@@ -93,3 +93,6 @@ plt.show()
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
+
+## License
+```
