@@ -1,5 +1,3 @@
----
-
 # CIFAR-10 Classification Project
 
 This project contains a deep learning model for image classification using the CIFAR-10 dataset. It utilizes TensorFlow and Keras libraries to build and train a convolutional neural network (CNN) for classifying images into 10 different categories.
@@ -152,5 +150,3 @@ Contributions are welcome! If you have any suggestions or improvements, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
