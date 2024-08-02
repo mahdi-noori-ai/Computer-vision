@@ -1,5 +1,3 @@
----
-
 # Fine-Tuned CNN for Flower Classification
 
 Welcome to the Flower Classification project! This repository contains a deep learning model fine-tuned using TensorFlow and TensorFlow Hub for classifying flower images. The project achieves an impressive accuracy of 98.31%.
@@ -150,5 +148,3 @@ Contributions are welcome! If you have any suggestions or improvements, please f
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
